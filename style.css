@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: fit-content;
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    box-shadow: 0px 0px 7px rgb(228, 93, 210);
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-container .input-class-container {
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 1em;
+    
+}
+
+.input-container .input-class-container .input-class {
+    font-size: 0.9rem;
+    margin: 0.5em 0 0 0;
+
+}
+
+.input-container .input-class-container .input-class p {
+    font-weight: 500;
+    font-size: 0.7rem;
+    margin-bottom: 0.2em;
+}
+
+.input-container .input-class-container .input-class input {
+    display: block;
+    padding: 1em;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    transition: all 0.5s;
+}
+
+.input-container .input-class-container .input-class input:hover, .input-container .input-class-container .input-class input:focus {
+    border: 1px solid plum;
+}
+
+
+.input-container .input-class-container .input-class input[placeholder] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.input-container .checkbox {
+    font-size: 0.9rem;
+    margin-bottom: 1em;
+}
+
+.input-container .checkbox label {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-container .checkbox input[checkbox] {
+    background-color: plum;
+}
+
+.input-container .btns {
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 5em;
+}
+
+.input-container .btns button {
+    padding: 0.5em 2em;
+    margin: 0 0.1em;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    border: 0.5px solid black;
+    cursor: pointer;
+    background-color: whitesmoke;
+    transition: ease-in-out 0.5s;
+}
+
+
+
+.input-container .btns button:hover, .input-container .btns button:focus {
+    background-color: rgb(116, 44, 116);
+    color: whitesmoke;
+    border: none;
+}
