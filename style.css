@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+input, input::after, input::before{
+    border: none;
+}
+
 .container {
     height: fit-content;
     width: fit-content;
@@ -48,12 +52,13 @@
     width: 100%;
     border: none;
     border-bottom: 1px solid black;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .input-container .input-class-container .input-class input:hover, .input-container .input-class-container .input-class input:focus {
     border: 1px solid plum;
 }
+
 
 
 .input-container .input-class-container .input-class input[placeholder] {
@@ -74,6 +79,10 @@
 
 .input-container .checkbox input[checkbox] {
     background-color: plum;
+}
+
+.input-container .checkbox input[checkbox]::marker {
+    color: plum;
 }
 
 .input-container .btns {
